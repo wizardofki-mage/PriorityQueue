@@ -61,7 +61,7 @@ To compile this .java file into Java bytecode, you can use the command line like
 
 ## Sources
 - I was having trouble with the compiler since it could not find symbol Comparable or <E>, so I asked https://deepai.org/chat/ai-code#3297b278-b6dc-4357-8193-541a907b991b "why can't the javac compiler find the symbol Comparator and <E>?" and it suggested using <E extends Comparable<E>> at the top of the class (which I discovered later the Professor had in his template for PriorityQueue, so I should have looked there first for that clue), and using Comparable<? super E> instead of Comparable<E> in the constructors. After asking it to "Please help me rewrite the constructor with proper constraints.", it next suggested to this.c = (e1, e2) -> e1.compareTo(e2)); in the constructors instead of the commented-out line that it first suggested.
-- MyHeap is implemented according to the mathematical formula in Chapter 23.6.1 of our textbook that says, "Storing A Heap" that "For a node at position i, its left child is at position 2i + 1, and its right child is at position 2i + 2, and its parent is (i - 1) / 2." (Liang, 2024).
+- MyHeap is implemented according to the mathematical formula in Chapter 23.6.1 of our textbook "Storing a Heap" that says, "For a node at position i, its left child is at position 2i + 1, and its right child is at position 2i + 2, and its parent is (i - 1) / 2." (Liang, 2024).
 
 ## Works Cited
 - Dale, Nell, Joyce, Daniel T., and Weems, Chip. *Object-Oriented Data Structures Using Java*. Jones and Bartlett Learning, 2002.
