@@ -1,4 +1,4 @@
-# MyStack
+# PriorityQueue
 PriorityQueue uses a custom MyArrayList that extends AbstractList and implements a List interface. In turn, MyArrayList is used to create MyHeap, which extends Comparable and implements Heap. PriorityQueue implements Queue and uses MyHeap by composition to store objects. As objects are dequeued from the PriorityQueue, they are listed in ascending order since that is how they are stored in the heap's tree structure.
 
 ## Table of contents
@@ -34,6 +34,8 @@ PriorityQueue uses a custom MyArrayList that extends AbstractList and implements
 - The peek() method was removed from this version of the Queue interface because it wasn't needed in this implementation.
 - PriorityQueue calls on respective Heap methods to accomplish its tasks.
 - For example, enqueue() calls heap.add() and dequeue calls heap.remove().
+- Since the program uses generics (which is a beneficial programming technique), the compiler will complain that PriorityQueue.java uses unchecked or unsafe operations (which is just its way of saying it cannot guarantee type casting of objects into their actual type, such as Book).
+- There is no way to prevent or suppress this message when using generics, but Java bytecode is still compiled into classes within the directory that PriorityQueue.java is saved to, and the program can still be run with the javac command.
 
 ## Technologies:
 I wrote the source code in Notepad in Windows 11, compiled it in the Command Prompt using the javac command, and ran it using the java command.
