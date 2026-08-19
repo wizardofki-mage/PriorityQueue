@@ -20,7 +20,7 @@ PriorityQueue uses a custom MyArrayList that extends AbstractList and implements
 
 ## General info
 - The PriorityQueue is tested with a separate internal class called Book that implements Comparable by comparing whether a Book's rating is less than another Book's rating by subtracting the other Book's rating from the first Book's rating. 
-- PriorityQueue creates four book objects, enqueues them on the priority queue that uses a heap as its implementation, and when they are dequeued, the books are listed in ascending order by title since that is how they are stored in the heap's tree structure.
+- PriorityQueue creates four book objects, enqueues them on the priority queue that uses a heap as its implementation, and when they are dequeued, the books are listed in ascending order by rating since that is how they are stored in the heap's tree structure.
 - The program displays the heap/priorityQueue as a string before displaying the dequeued books.
 
 ## Author
